@@ -8,22 +8,22 @@
 <a
 	{href}
 	target="_blank"
-	class="m-4 flex w-1/2 max-w-2xl gap-4 rounded-lg border border-red-700 bg-red-950 bg-opacity-50 p-4 hover:shadow-lg hover:shadow-red-700 hover:ring-2 hover:ring-red-700"
+	class={`m-4 grid w-full max-w-2xl auto-rows-auto grid-cols-4 items-center gap-4
+		rounded-lg border border-red-700 bg-red-950 bg-opacity-50 p-4 
+		hover:shadow-lg hover:shadow-red-700 hover:ring-2 hover:ring-red-700`}
 >
-	<div class="w-full">
-		<picture>
-		{#each imgSources as { src, type }, i}
-			{#if i !== 0}
-				<source srcset={src} {type} />
-			{:else}
-				<img class="w-40 h-40"  {src} alt={title} />
-			{/if}
-		{/each}
-	</picture>
+	<div class="w-full xs:row-span-3">
+		<picture class="w-full">
+			{#each imgSources as { src, type }, i}
+				{#if i !== 0}
+					<source srcset={src} {type} />
+				{:else}
+					<img class="w-full" {src} alt={title} />
+				{/if}
+			{/each}
+		</picture>
 	</div>
-	<div class="flex grow flex-col gap-2">
-		<h2 class="text-xl font-bold lowercase">{title}</h2>
-		<p class="grow text-sm"><slot /></p>
-		<span class="border-t border-red-700 pt-1 text-xs text-right">{linkText}</span>
-	</div>
+	<h2 class="col-span-3 text-xl font-bold lowercase">{title}</h2>
+	<p class="col-span-4 text-sm xs:col-span-3"><slot /></p>
+	<span class="col-span-4 border-t border-red-700 pt-1 text-right text-xs">{linkText}</span>
 </a>
