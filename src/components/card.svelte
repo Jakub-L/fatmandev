@@ -13,12 +13,12 @@
 		rounded-lg border border-red-700 bg-red-950 bg-opacity-50 p-4`}
 >
 	<div class="w-full xs:row-span-2">
-		<picture class="w-full">
+		<picture >
 			{#each imgSources as { src, type }, i}
 				{#if i !== 0}
 					<source srcset={src} {type} />
 				{:else}
-					<img class="w-full" {src} alt={`${title} - project image`} />
+					<img class="w-full h-full" {src} alt={`${title} - project image`} />
 				{/if}
 			{/each}
 		</picture>

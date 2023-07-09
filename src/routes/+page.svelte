@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Card from '../components/card.svelte';
+	import SocialLinks from '../components/social-links.svelte';
 
 	let projects = [
 		{
@@ -27,6 +28,9 @@
 </script>
 
 <h1 class="text-4xl text-red-500">fatman.dev</h1>
-{#each projects as project}
-	<Card {...project} />
-{/each}
+<SocialLinks />
+<section>
+	{#each projects as project}
+		<Card {...project} />
+	{/each}
+</section>
