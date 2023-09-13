@@ -13,19 +13,23 @@
 		rounded-lg border border-red-700 bg-red-950 bg-opacity-50 p-4`}
 >
 	<div class="w-full xs:row-span-2">
-		<picture >
+		<picture>
 			{#each imgSources as { src, type }, i}
 				{#if i !== 0}
 					<source srcset={src} {type} />
 				{:else}
-					<img class="w-full h-full" {src} alt={`${title} - project image`} />
+					<img class="h-full w-full" {src} alt={`${title} - project image`} />
 				{/if}
 			{/each}
 		</picture>
 	</div>
 	<h2 class="col-span-4 self-center text-xl font-bold lowercase">{title}</h2>
 	<p class="col-span-5 text-sm xs:col-span-4">{description}</p>
-	<div class="col-span-5 flex items-center justify-between border-t border-red-700 pt-1 text-sm">
+	<div
+		class="col-span-5 flex items-center border-t border-red-700 pt-1 text-sm"
+		class:justify-between={repo}
+		class:justify-end={!repo}
+	>
 		{#if repo}
 			<a
 				href={repo.href}
