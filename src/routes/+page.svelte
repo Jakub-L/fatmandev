@@ -4,12 +4,12 @@
 
 	let projects = [
 		{
-			title: 'Monad • Shadowrun 5E player aid',
+			title: 'Monad5 • Shadowrun 5E player aid',
 			imgSources: [
 				{ src: 'project-images/monad.webp', type: 'image/webp' },
 				{ src: 'project-images/monad.png', type: 'image/png' }
 			],
-			live: { href: 'https://monad.fatman.dev/', text: 'monad.fatman.dev' },
+			live: { href: 'https://monad5.fatman.dev/', text: 'monad.fatman.dev' },
 			repo: null,
 			description:
 				'Web tool for Shadowrun 5E players. Started as a cyberdeck aid, but I have been adding more functionality over time. Mobile-first, as it was intented to be used at the gaming table. Built using Svelte and TailwindCSS.'
