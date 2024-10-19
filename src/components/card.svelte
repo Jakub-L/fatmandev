@@ -9,7 +9,7 @@
 </script>
 
 <div
-	class={`m-2 grid w-full max-w-2xl grid-cols-5 items-start gap-4
+	class={`grid w-full max-w-2xl grid-cols-5 items-start gap-4
 		rounded-lg border border-red-700 bg-red-950 bg-opacity-50 p-4`}
 >
 	<div class="w-full xs:row-span-2">
