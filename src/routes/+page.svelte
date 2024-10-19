@@ -4,6 +4,17 @@
 
 	let projects = [
 		{
+			title: '//Rampart • Delta Green agent manager',
+			imgSources: [
+				{ src: 'project-images/rampart.webp', type: 'image/webp' },
+				{ src: 'project-images/rampart.png', type: 'image/png' }
+			],
+			live: { href: 'https://rampart.fatman.dev/', text: 'rampart.fatman.dev' },
+			repo: null,
+			description:
+				"An agent (player character) manager for the Delta Green RPG. Duplicates the paper character sheet, but it's a work in progress with features being added. Built using Nextjs and TailwindCSS."
+		},
+		{
 			title: 'Monad5 • Shadowrun 5E player aid',
 			imgSources: [
 				{ src: 'project-images/monad.webp', type: 'image/webp' },
