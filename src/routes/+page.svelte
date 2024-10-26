@@ -37,6 +37,17 @@
 				'Web-based subnetting tool. It explains the principles behind IP addresses and subnet masks, and allows interactive calculations, showing bit-by-bit changes. Built using pure HTML, CSS and JS, fully accessible, responsive, with a dark and light mode.'
 		},
 		{
+			title: 'Playmat Visualiser • Showcase of colour permutations',
+			imgSources: [
+				{ src: 'project-images/playmat.webp', type: 'image/webp' },
+				{ src: 'project-images/playmat.png', type: 'image/png' }
+			],
+			live: { href: 'https://playmat.fatman.dev/', text: 'playmat.fatman.dev' },
+			repo: { href: 'https://github.com/Jakub-L/play-mat-calculator', text: 'Github repository' },
+			description:
+				"I have a child's playmat made of 16 tiles of 4 different colours. I wondered how many symmetric arrangements for it there are, so I made this page to visualise it. Build using pure HTML, CSS and JS."
+		},
+		{
 			title: 'fatman.dev • My dev homepage',
 			imgSources: [
 				{ src: 'project-images/fatmandev.webp', type: 'image/webp' },
