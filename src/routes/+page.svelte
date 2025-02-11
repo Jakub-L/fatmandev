@@ -26,6 +26,17 @@
 				'Web tool for Shadowrun 5E players. Started as a cyberdeck aid, but I have been adding more functionality over time. Mobile-first, as it was intented to be used at the gaming table. Built using Svelte and TailwindCSS.'
 		},
 		{
+			title: 'Animal Dictionary • A Polish-English visual learning aid',
+			imgSources: [
+				{ src: 'project-images/animal-dictionary.webp', type: 'image/webp' },
+				{ src: 'project-images/animal-dictionary.png', type: 'image/png' }
+			],
+			live: { href: 'https://animals.fatman.dev/', text: 'animals.fatman.dev' },
+			repo: { href: 'https://github.com/Jakub-L/animal-dictionary', text: 'Github repository' },
+			description:
+				'A visual dictionary of animals, with their taxonomies and names in Polish and English. Designed to help me teach my children about animals. Built using SvelteKit and TailwindCSS.'
+		},
+		{
 			title: '/24 • Subnetting calculator',
 			imgSources: [
 				{ src: 'project-images/slash-24.webp', type: 'image/webp' },
