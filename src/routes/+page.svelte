@@ -4,6 +4,16 @@
 
 	let projects = [
 		{
+			title: "Monad//Map • Cyberpunk city map editor",
+			imgSources: [
+				{ src: 'project-images/monad-map.webp', type: 'image/webp' },
+				{ src: 'project-images/monad-map.png', type: 'image/png' }
+			],
+			live: { href: 'https://monad-map.fatman.dev/', text: 'monad-map.fatman.dev' },
+			repo: { href: 'https://github.com/Jakub-L/monad-map', text: 'Github repository' },
+			description: "A Maplibre-based map editor for creating cyberpunk city maps. Allows drag-and-drop placement of points of interest and exporting to local files. Manages multiple maps in local storage. Built using Svelte, Maplibre GL JS and TailwindCSS."
+		},
+		{
 			title: '//Rampart • Delta Green agent manager',
 			imgSources: [
 				{ src: 'project-images/rampart.webp', type: 'image/webp' },
