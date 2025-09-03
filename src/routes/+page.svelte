@@ -4,14 +4,26 @@
 
 	let projects = [
 		{
-			title: "Monad//Map • Cyberpunk city map editor",
+			title: 'Factotum • A Mythras toolset',
+			imgSources: [
+				{ src: 'project-images/factotum.webp', type: 'image/webp' },
+				{ src: 'project-images/factotum.png', type: 'image/png' }
+			],
+			live: { href: 'https://factotum.fatman.dev/', text: 'factotum.fatman.dev' },
+			repo: null,
+			description:
+				'A set of tools for the Mythras RPG, including a dice roller and a combat tracker. I built it with responsive design in mind, so it could be used as a table aid on mobile devices. Built using Svelte and TailwindCSS.'
+		},
+		{
+			title: 'Monad//Map • Cyberpunk city map editor',
 			imgSources: [
 				{ src: 'project-images/monad-map.webp', type: 'image/webp' },
 				{ src: 'project-images/monad-map.png', type: 'image/png' }
 			],
 			live: { href: 'https://monad-map.fatman.dev/', text: 'monad-map.fatman.dev' },
 			repo: { href: 'https://github.com/Jakub-L/monad-map', text: 'Github repository' },
-			description: "A Maplibre-based map editor for creating cyberpunk city maps. Allows drag-and-drop placement of points of interest and exporting to local files. Manages multiple maps in local storage. Built using Svelte, Maplibre GL JS and TailwindCSS."
+			description:
+				'A Maplibre-based map editor for creating cyberpunk city maps. Allows drag-and-drop placement of points of interest and exporting to local files. Manages multiple maps in local storage. Built using Svelte, Maplibre GL JS and TailwindCSS.'
 		},
 		{
 			title: '//Rampart • Delta Green agent manager',
