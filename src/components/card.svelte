@@ -2,6 +2,7 @@
 	type Link = { href: string; text?: string };
 
 	export let title: string;
+	export let subtitle: string;
 	export let imgSources: { src: string; type: string }[];
 	export let repo: Link | null = null;
 	export let live: Link;
@@ -23,7 +24,7 @@
 			{/each}
 		</picture>
 	</div>
-	<h2 class="col-span-4 self-center text-xl font-bold lowercase">{title}</h2>
+	<h2 class="col-span-4 self-center text-xl font-bold lowercase">{title} • {subtitle}</h2>
 	<p class="col-span-5 text-sm xs:col-span-4">{description}</p>
 	<div
 		class="col-span-5 flex items-center border-t border-red-700 pt-1 text-sm"
@@ -37,7 +38,7 @@
 				class="flex items-center justify-start gap-2 rounded-full px-1 underline decoration-dotted hover:scale-105 focus-visible:outline-dotted focus-visible:outline-2 focus-visible:outline-red-200"
 			>
 				<img src="/ui/github-logo.svg" alt="" role="presentation" class="h-5 w-5" />
-				{repo.text ?? repo.href}
+				Github repository
 				<span class="sr-only">(opens in new tab)</span>
 			</a>
 		{/if}
@@ -46,8 +47,8 @@
 			target="_blank"
 			class="flex items-center justify-end gap-2 rounded-full px-1 underline decoration-dotted hover:scale-105 focus-visible:outline-dotted focus-visible:outline-2 focus-visible:outline-red-200"
 		>
-			{live.text ?? live.href}
-			<span class="sr-only">(opens in new tab)</span>
+			<span aria-hidden="true">{live.text ?? live.href}</span>
+			<span class="sr-only">{title} live site(opens in new tab)</span>
 		</a>
 	</div>
 </article>
