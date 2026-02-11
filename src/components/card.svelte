@@ -10,10 +10,9 @@
 </script>
 
 <article
-	class={`grid w-full max-w-2xl grid-cols-5 items-start gap-4
-		rounded-lg border border-red-700 bg-red-950 bg-opacity-50 p-4`}
+	class="grid w-full max-w-2xl grid-cols-[1fr_4fr] items-start gap-4 rounded-lg border border-red-700 bg-red-950 bg-opacity-50 p-4"
 >
-	<div class="w-full xs:row-span-2">
+	<div class="w-full xs:row-span-2 flex items-center h-full xs:h-auto">
 		<picture>
 			{#each imgSources as { src, type }, i}
 				{#if i !== 0}
@@ -24,10 +23,10 @@
 			{/each}
 		</picture>
 	</div>
-	<h2 class="col-span-4 self-center text-xl font-bold lowercase">{title} • {subtitle}</h2>
-	<p class="col-span-5 text-sm xs:col-span-4">{description}</p>
+	<h2 class="self-center text-xl font-bold lowercase">{title} • {subtitle}</h2>
+	<p class="col-span-2 text-sm xs:col-span-1">{description}</p>
 	<div
-		class="col-span-5 flex items-center border-t border-red-700 pt-1 text-sm"
+		class="col-span-2 flex items-center border-t border-red-700 pt-1 text-sm"
 		class:justify-between={repo}
 		class:justify-end={!repo}
 	>
