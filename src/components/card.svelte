@@ -8,7 +8,7 @@
 	export let description: string;
 </script>
 
-<div
+<article
 	class={`grid w-full max-w-2xl grid-cols-5 items-start gap-4
 		rounded-lg border border-red-700 bg-red-950 bg-opacity-50 p-4`}
 >
@@ -18,7 +18,7 @@
 				{#if i !== 0}
 					<source srcset={src} {type} />
 				{:else}
-					<img class="h-full w-full" {src} alt={`${title} - project image`} />
+					<img class="h-full w-full" {src} alt="" role="presentation" />
 				{/if}
 			{/each}
 		</picture>
@@ -34,20 +34,20 @@
 			<a
 				href={repo.href}
 				target="_blank"
-				class={`flex items-center justify-start gap-2 rounded-full px-1 underline decoration-dotted 
-					hover:scale-105 focus-visible:outline-dotted focus-visible:outline-2 focus-visible:outline-red-200`}
+				class="flex items-center justify-start gap-2 rounded-full px-1 underline decoration-dotted hover:scale-105 focus-visible:outline-dotted focus-visible:outline-2 focus-visible:outline-red-200"
 			>
-				<img src="/ui/github-logo.svg" alt="Github repository" class="h-5 w-5" />
+				<img src="/ui/github-logo.svg" alt="" role="presentation" class="h-5 w-5" />
 				{repo.text ?? repo.href}
+				<span class="sr-only">(opens in new tab)</span>
 			</a>
 		{/if}
 		<a
 			href={live.href}
 			target="_blank"
-			class={`flex items-center justify-end gap-2 rounded-full px-1 underline decoration-dotted 
-				hover:scale-105 focus-visible:outline-dotted focus-visible:outline-2 focus-visible:outline-red-200`}
+			class="flex items-center justify-end gap-2 rounded-full px-1 underline decoration-dotted hover:scale-105 focus-visible:outline-dotted focus-visible:outline-2 focus-visible:outline-red-200"
 		>
 			{live.text ?? live.href}
+			<span class="sr-only">(opens in new tab)</span>
 		</a>
 	</div>
-</div>
+</article>

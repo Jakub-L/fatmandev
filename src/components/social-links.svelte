@@ -1,4 +1,4 @@
-<section class="mb-4 mt-1 flex gap-2">
+<nav aria-label="Social links"class="mb-4 mt-1 flex gap-2">
 	<a
 		href="https://github.com/Jakub-L"
 		target="_blank"
@@ -13,4 +13,4 @@
 	>
 		<img src="/ui/linkedin-logo.svg" alt="LinkedIn" class="h-8 w-8" />
 	</a>
-</section>
+</nav>

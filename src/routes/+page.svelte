@@ -95,8 +95,8 @@
 
 <h1 class="text-4xl text-red-500">fatman.dev</h1>
 <SocialLinks />
-<section class="flex flex-col gap-4">
+<main class="flex flex-col gap-4">
 	{#each projects as project}
 		<Card {...project} />
 	{/each}
-</section>
+</main>
