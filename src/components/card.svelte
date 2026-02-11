@@ -49,7 +49,7 @@
 			class="flex items-center justify-end gap-2 rounded-full px-1 underline decoration-dotted hover:scale-105 focus-visible:outline-dotted focus-visible:outline-2 focus-visible:outline-red-200"
 		>
 			<span aria-hidden="true">{live.text ?? live.href}</span>
-			<span class="sr-only">{title} live site(opens in new tab)</span>
+			<span class="sr-only">{title} live site (opens in new tab)</span>
 		</a>
 	</div>
 </article>
