@@ -4,6 +4,18 @@
 
 	let projects = [
 		{
+			title: 'Monad//A',
+			subtitle: 'A Shadowrun Anarchy 2.0 dice roller',
+			imgSources: [
+				{ src: 'project-images/monad-a.webp', type: 'image/webp' },
+				{ src: 'project-images/monad-a.png', type: 'image/png' }
+			],
+			live: { href: 'https://monad-a2.fatman.dev/', text: 'monad-a2.fatman.dev' },
+			repo: null,
+			description:
+				'A dice roller for the Shadowrun Anarchy 2.0 RPG. Built using Svelte and TailwindCSS, with extensive custom CSS for a cyberpunk feel.'
+		},
+		{
 			title: 'Factotum',
 			subtitle: 'A Mythras toolset',
 			imgSources: [
