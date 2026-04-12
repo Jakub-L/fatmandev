@@ -4,6 +4,18 @@
 
 	let projects = [
 		{
+			title: 'Optimum Ebb',
+			subtitle: 'An item optimiser for Esoteric Ebb',
+			imgSources: [
+				{ src: 'project-images/optimum-ebb.webp', type: 'image/webp' },
+				{ src: 'project-images/optimum-ebb.png', type: 'image/png' }
+			],
+			live: { href: 'https://ebb.fatman.dev/', text: 'ebb.fatman.dev' },
+			repo: { href: 'https://github.com/Jakub-L/optimum-ebb' },
+			description:
+				'An optimiser for finding the best items in the game Esoteric Ebb to achieve high ability scores, based on the base character, their owned items and posessed feats. Built using React and Tailwind CSS.'
+		},
+		{
 			title: 'Monad//A',
 			subtitle: 'A Shadowrun Anarchy 2.0 dice roller',
 			imgSources: [
