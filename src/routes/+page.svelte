@@ -2,7 +2,16 @@
 	import Card from '../components/card.svelte';
 	import SocialLinks from '../components/social-links.svelte';
 
-	let projects = [
+	type Project = {
+		title: string;
+		subtitle: string;
+		imgSources: { src: string; type: string }[];
+		live: { href: string; text: string };
+		repo: { href: string } | null;
+		description: string;
+	}
+
+	let projects: Project[] = [
 		{
 			title: 'Monad//Blast',
 			subtitle: 'A Shadowrun 5E explosion simulator',
@@ -11,6 +20,7 @@
 				{ src: 'project-images/monad-blast.png', type: 'image/png' }
 			],
 			live: { href: 'https://monad-blast.fatman.dev/', text: 'monad-blast.fatman.dev' },
+			repo: null,
 			description:
 				'A quite complex simulator taking into account explosions, interactions with walls and barriers, and potential multiple reflections of blast waves—implementing Shadowrun 5E\'s arcane "chunky salsa" rules. Built using Svelte and TailwindCSS.'
 		},
@@ -139,7 +149,7 @@
 <h1 class="text-4xl text-red-500">fatman.dev</h1>
 <SocialLinks />
 <main class="flex flex-col gap-4">
-	{#each projects as project}
+	{#each projects as project (project.title)}
 		<Card {...project} />
 	{/each}
 </main>
