@@ -4,6 +4,17 @@
 
 	let projects = [
 		{
+			title: 'Monad//Blast',
+			subtitle: 'A Shadowrun 5E explosion simulator',
+			imgSources: [
+				{ src: 'project-images/monad-blast.webp', type: 'image/webp' },
+				{ src: 'project-images/monad-blast.png', type: 'image/png' }
+			],
+			live: { href: 'https://monad-blast.fatman.dev/', text: 'monad-blast.fatman.dev' },
+			description:
+				'A quite complex simulator taking into account explosions, interactions with walls and barriers, and potential multiple reflections of blast waves—implementing Shadowrun 5E\'s arcane "chunky salsa" rules. Built using Svelte and TailwindCSS.'
+		},
+		{
 			title: 'Optimum Ebb',
 			subtitle: 'An item optimiser for Esoteric Ebb',
 			imgSources: [
