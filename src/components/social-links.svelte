@@ -1,4 +1,4 @@
-<nav aria-label="Social links"class="mb-4 mt-1 flex gap-2">
+<nav aria-label="Social links" class="mb-4 mt-1 flex gap-2">
 	<a
 		href="https://github.com/Jakub-L"
 		target="_blank"
