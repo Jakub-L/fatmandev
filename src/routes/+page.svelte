@@ -6,12 +6,26 @@
 		title: string;
 		subtitle: string;
 		imgSources: { src: string; type: string }[];
-		live: { href: string; text: string };
+		live: { href: string; text: string } | null;
 		repo: { href: string } | null;
 		description: string;
-	}
+		imageClasses?: string;
+	};
 
 	let projects: Project[] = [
+		{
+			title: 'Monad//Blast Library',
+			subtitle: 'The library underpinning Monad//Blast',
+			imgSources: [
+				{ src: 'project-images/monad-blast.webp', type: 'image/webp' },
+				{ src: 'project-images/monad-blast.png', type: 'image/png' }
+			],
+			imageClasses: 'hue-rotate-180',
+			live: null,
+			repo: { href: 'https://github.com/Jakub-L/monad-blast-simulation' },
+			description:
+				'The library used for simulating explosions in Monad//Blast. I extracted it from the main project, tidied it up, improved the documentation (inline comments, JSDoc and a readme) and published it as a GPL-3.0 open-source project.'
+		},
 		{
 			title: 'Monad//Blast',
 			subtitle: 'A Shadowrun 5E explosion simulator',
