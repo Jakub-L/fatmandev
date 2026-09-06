@@ -6,10 +6,11 @@
 		title: string;
 		subtitle: string;
 		imgSources: { src: string; type: string }[];
-		live: { href: string; text: string };
+		live: { href: string; text: string } | null;
 		repo: { href: string } | null;
 		description: string;
-	}
+		imageClasses?: string;
+	};
 
 	let projects: Project[] = [
 		{
